@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Trending Repos</string>
+
+    <string name="avatar_desc">AvatarDescription</string>
+    <string name="repo_name">repoName</string>
+    <string name="repo_desc">repoDesc</string>
+    <string name="owner_name">ownerName</string>
+    <string name="number_of_stars">numberOfStars</string>
+    <string name="star_img">StarImageDescription</string>
+</resources>

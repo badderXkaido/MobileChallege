@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <ImageView
+        android:id="@+id/imageAvatar"
+        android:layout_width="33dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="13dp"
+        android:contentDescription="@string/avatar_desc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ownerName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/repoDesc"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/starImg"
+        android:layout_width="31dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/star_img"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/numberOfStars" />
+
+    <TextView
+        android:id="@+id/ownerName"
+        android:layout_width="0dp"
+        android:layout_height="27dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/owner_name"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/numberOfStars"
+        app:layout_constraintStart_toEndOf="@+id/imageAvatar"
+        app:layout_constraintTop_toBottomOf="@+id/repoName" />
+
+    <TextView
+        android:id="@+id/numberOfStars"
+        android:layout_width="95dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="3dp"
+        android:text="@string/number_of_stars"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/ownerName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ownerName"
+        app:layout_constraintTop_toTopOf="@+id/starImg"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/repoName"
+        android:layout_width="237dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="103dp"
+        android:text="@string/repo_name"
+        android:textColor="#000000"
+        android:textSize="17.3sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ownerName"
+        app:layout_constraintEnd_toEndOf="@+id/ownerName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/repoDesc"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/repoDesc"
+        android:layout_width="237dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="27dp"
+        android:text="@string/repo_desc"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/imageAvatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/repoName" />
+
+</android.support.constraint.ConstraintLayout>
